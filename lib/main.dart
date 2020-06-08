@@ -28,7 +28,7 @@ class RealWorldState extends State<RealWorldApp> {
     if (response.statusCode == 200) {
 //      print(response.body);
 
-      final map = json.decode(response.body);
+      final map = jsonDecode(response.body);
       final videosJson = map["videos"];
 
 //      videosJson.forEach((video) {
